@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 10vh;
+    justify-content: space-between;
+    background-color: yellow;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    color: black;
+    gap: 30px;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+}
+
+nav li,
+a {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+a {
+
+    cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+main {
+
+    background-color: yellow;
+    /* height: 100vh; */
+}
+
+section {
+    display: flex;
+    /* height: 95vh; */
+    /*no width is required when flex */
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    /* padding: 10px 20px; */
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.right_div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+
+    /* width: 30%; */
+    padding: 0 30px;
+}
+
+.right_div h2 {
+    font-size: 3.3rem;
+    font-weight: bolder;
+
+}
+
+.right_div p {
+    font-size: 2rem;
+    line-height: 1.5;
+
+}
+
+.btn {
+    padding: 9px 13px;
+    font-size: 1.3rem;
+    border: 2px solid;
+    background: black;
+    border-radius: 50px;
+    color: yellow;
+    cursor: pointer;
+    /* width: 150px; //         //use flex start
+    height: 150px; */
+}
+
+/* .btn {
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    border: none;
+    color: #fdcc04;
+    background: #000;
+    cursor: pointer;
+    border-radius: 50px;
+} */
+
+/*  after few mins */
+
+.left_div {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-items: center;
+}
+
+.hero_img {
+    max-width: 100%;
+    max-width: 100%;
+}
+
+.btn:hover,
+a:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+
+
+@media(max-width:768px) {
+    section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:530px) {
+    nav {
+        visibility: hidden;
+    }
+}
